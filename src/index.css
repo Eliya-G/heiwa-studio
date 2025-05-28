@@ -1,0 +1,54 @@
+:root {
+    --nav-icon-unite: 40px;
+    --circle-gradient2: radial-gradient(circle, #729762, #729762,#E1F0DA);
+}
+
+*  {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+  font-family: apparel-regular;
+  src: url(../public/Apparel-Regular.otf);
+}
+
+
+.nav-bar {
+  position: relative;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  background-image: var(--circle-gradient2);
+  box-shadow: 20px 10px 30px rgba(0, 0, 0, 0.8); 
+  border-bottom-left-radius: 10px; 
+  border-bottom-right-radius: 10px;
+  gap: 1rem;
+}
+
+.nav-bar img {
+  height: var(--nav-icon-unite);
+  width: var(--nav-icon-unite);
+}
+
+.nav-button-group {
+  display: flex;
+  gap: 2cqw;
+  justify-content: center;
+  flex-grow: 1; 
+}
+
+.nav-button-group button{
+    height: var(--nav-icon-unite);
+    width: 60px;
+}
+
+.btn-spacer {
+  width: var(--nav-icon-unite);
+  height: var(--nav-icon-unite);
+}
+
+body{
+  background-color: #E1F0DA;
+}

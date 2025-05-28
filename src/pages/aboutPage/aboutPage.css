@@ -1,0 +1,112 @@
+:root {
+  --slideshow-width: 5%;
+}
+
+@media (max-width: 450px) {
+  /* Changing the "Heiwa Studio" text for mobile */
+  :root {
+    --slideshow-width: 0%;
+  }
+}
+
+
+#abt-body{
+  height: 500px;
+  display: flex;
+}
+
+.abt-title{
+  padding-top: 100px;
+  text-align: center;
+  font-size: 40px;
+}
+
+
+.team-card-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, auto));
+  gap: 70px;
+  height: auto;  
+  padding: 1rem;
+}
+
+.team-member-card{
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;  
+}
+
+.team-member-para{
+  font-size: var(--content-body-size);
+}
+
+.team-icons{
+  height: 150px;
+  width:150px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+
+.slideshow-wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.sideshow-container{
+  margin: 30px;
+
+  border-radius: var(--rounded-edges-radius);
+  background-color: #597445;
+  height: 90%;
+  width: var(--content-width);
+}
+
+.slideshow-frame{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.top-studio-slideshow{
+  padding-top: 25px;
+  padding-left: var(--slideshow-width);
+  padding-right: var(--slideshow-width);
+  padding-bottom: 50px;
+}
+
+.top-studio-slideshow img{
+  height: 100%;
+  width: 100%;
+}
+
+.bottom-studio-slideshow{
+  padding-bottom: 20px;
+  margin-right: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+
+.bottom-studio-item img{
+  height: 100%;
+  width: 100%
+}
+
+
+.bottom-studio-slideshow img:hover{
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.map-container{
+  display: flex;
+  justify-content: center;
+}
+
+.map-container iframe{
+  width: 80%;
+}

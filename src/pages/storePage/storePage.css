@@ -1,0 +1,68 @@
+:root{
+    --store-item-width: 320px;
+    --store-container-width: 80%;
+    --store-item-shift-value: 0px;
+
+}
+
+
+@media (max-width: 450px) {
+    /* Changing the "Heiwa Studio" text for mobile */
+    :root {
+      --store-container-width: 90%;
+      --store-item-shift-value: 10px;
+    }
+  }
+
+  #cart-button{
+    position: absolute;
+    top: 0.315rem;
+    right: 0.6rem;
+
+    height: var(--nav-icon-unite);
+    width: 60px;
+    border-color: #597445;
+    border-radius: 5px;
+  }
+
+.store-container{
+    display: flex;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: center;
+    background-color: #065d9bbb;
+    border-radius: var(--rounded-edges-radius);
+    width: var(--store-container-width);
+    height: auto;
+}
+
+.store-item-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, auto)); 
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    gap: 20px; 
+    padding: 20px; 
+}
+
+
+.store-item{
+    border-radius: var(--rounded-edges-radius);
+    background-color: rgb(173, 173, 173);
+    height: 500px;
+    width: var(--store-item-width);
+    text-align: center;
+    padding: 10px;
+    margin-left: var(--store-item-shift-value);
+}
+
+.store-item-price{
+    font-size: 30px;
+    padding: 20px;
+}
+
+.addToCartBtn{
+    height: 40px;
+    width: 80px;
+}
