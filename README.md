@@ -1,4 +1,3 @@
-# Heiwa Studio
 ![project_icon](https://raw.githubusercontent.com/Eliya-G/heiwa-studio/refs/heads/main/public/repo_logo.png)
 
 Heiwa Studio is a full-stack demo website designed to showcase my front-end and back-end development skills from server to website. Built using React and react-router-dom, the site delivers a dynamic, responsive experience that looks great across desktop, tablet, and mobile devices. From day one, I prioritized cross-platform compatibility and clean design.
